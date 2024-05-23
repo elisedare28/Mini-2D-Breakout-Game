@@ -1,4 +1,4 @@
-# Mini-Pong-Game
+# Mini-2D-Breakout-Game
 
 A simple Breakout game implemented using HTML5 Canvas and JavaScript.
 
