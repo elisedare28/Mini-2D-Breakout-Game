@@ -9,6 +9,7 @@ A simple Breakout game implemented using HTML5 Canvas and JavaScript.
 - [Installation](#installation)
 - [Usage](#usage)
 - [References](#references)
+- [License](#license)
 
 ## Introduction
 
@@ -46,3 +47,6 @@ This is a basic implementation of the classic Breakout game using HTML5 Canvas a
 - [MDN Web Docs: Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 - [MDN Web Docs: 2D breakout game using pure JavaScript](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript)
 
+## License
+
+This project is licensed under the MIT License. 
