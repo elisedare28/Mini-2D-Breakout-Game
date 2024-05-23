@@ -4,8 +4,8 @@ const ctx = canvas.getContext("2d");
 
 let x = canvas.width / 2;
 let y = canvas.height / 2;
-let dx = 2.7;
-let dy = -2.7;
+let dx = 2.5;
+let dy = -2.5;
 const ballRadius = 10;
 let ballColor = "#FF00FF";
 
@@ -55,16 +55,17 @@ function draw() {
         else {
             lives--;
             if (!lives) {
+                clearInterval(interval);
+                changeButton();
                 ctx.font = "16px Arial"
                 ctx.fillStyle = "#000000";
                 ctx.fillText(`Game Over!    Score: ${score}`, canvas.width / 3, canvas.height / 1.5);
-                clearInterval(interval);
-                changeButton();
+                
             } else {
                 x = canvas.width / 2;
                 y = canvas.height / 2;
-                dx = 2.7;
-                dy = -2.7;
+                dx = 2.5;
+                dy = -2.5;
                 paddleX = (canvas.width - paddleWidth) / 2;
             }
         }
@@ -157,14 +158,16 @@ function collisionDetection() {
                     dy = -dy;
                     b.status = 0;
                     score++;
-                
-                    if(score === brickColCount * brickRowCount) {
-                        ctx.font = "16px Arial"
-                        ctx.fillStyle = "#000000";
-                        ctx.fillText(`You Win!    SCORE: ${score}`, canvas.width / 3, canvas.height / 2);
-                        clearInterval(interval);
-                        changeButton();
-                    }
+                }
+                if(score === brickColCount * brickRowCount) {
+                    setTimeout(() => {
+                    ctx.font = "16px Arial"
+                    ctx.fillStyle = "#000000";
+                    ctx.fillText(`You Win!    SCORE: ${score}`, canvas.width / 3, canvas.height / 2);
+                    clearInterval(interval);
+                    changeButton();
+                    }, 20);
+                    
                 }
             }
         }
