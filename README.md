@@ -28,7 +28,7 @@ This is a basic implementation of the classic Breakout game using HTML5 Canvas a
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/canvas-breakout-game.git
+    git clone https://github.com/elisedare28/canvas-breakout-game.git
     cd canvas-breakout-game
     ```
 
