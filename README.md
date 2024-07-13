@@ -28,8 +28,8 @@ This is a basic implementation of the classic Breakout game using HTML5 Canvas a
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/elisedare28/canvas-breakout-game.git
-    cd canvas-breakout-game
+    git clone https://github.com/elisedare28/Mini-2D-breakout-game.git
+    cd Mini-2D-Breakout-Game
     ```
 
 2. Open the `index.html` file in your web browser to start the game.
